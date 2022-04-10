@@ -1,21 +1,2 @@
-server:
-  port: 3344
-
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:7001/eureka/
-#      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
-spring:
-  application:
-    name: cloud-config-center
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:wodema/springcloud-config.git
-          search-paths:
-            - springcloud-config
-          default-label: master
+config:
+  info: "master branch,springcloud-config/config-dev.yml version=1"
